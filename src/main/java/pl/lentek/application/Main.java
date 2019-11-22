@@ -1,8 +1,23 @@
 package pl.lentek.application;
 
+import pl.lentek.singleton.GuessGame;
+
 public class Main {
+
   public static void main(String[] args) {
-    System.out.println(
-        "There is a master branch for design pattern training in JAVA. Pattern are available in branches.");
+    GuessGame game = GuessGame.getInstance();
+
+    game.play();
+
+    int score = game.getScore();
+
+    GuessGame anotherGameReference = GuessGame.getInstance();
+
+    if (game == anotherGameReference) {
+      System.out.println("Singleton!");
+      if (score == anotherGameReference.getScore()) {
+        System.out.println("I punkty się zgadzają!");
+      }
+    }
   }
 }
