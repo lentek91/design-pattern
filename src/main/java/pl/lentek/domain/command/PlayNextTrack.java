@@ -1,4 +1,7 @@
-package pl.lentek.domain;
+package pl.lentek.domain.command;
+
+import pl.lentek.domain.MusicPlayer;
+import pl.lentek.domain.MusicPlayerCommand;
 
 public class PlayNextTrack implements MusicPlayerCommand {
 

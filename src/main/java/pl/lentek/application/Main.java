@@ -2,9 +2,9 @@ package pl.lentek.application;
 
 import pl.lentek.domain.MusicPlayer;
 import pl.lentek.domain.MusicPlayerRemote;
-import pl.lentek.domain.PlayFirstTrack;
-import pl.lentek.domain.PlayNextTrack;
-import pl.lentek.domain.PlayRandomTrack;
+import pl.lentek.domain.command.PlayFirstTrack;
+import pl.lentek.domain.command.PlayNextTrack;
+import pl.lentek.domain.command.PlayRandomTrack;
 
 public class Main {
 
